@@ -1,17 +1,5 @@
 local Players = game:GetService('Players')
-local ReplicatedStorage = game:GetService('ReplicatedStorage')
-local RunService = game:GetService('RunService')
-local UserInputService = game:GetService('UserInputService')
-local TweenService = game:GetService('TweenService')
-local HttpService = game:GetService('HttpService')
-local Chat = game:GetService('Chat')
-
-pcall(function()
-    setthreadidentity(2)
-end)
-
--- COMPREHENSIVE HOOKS FOR FAKE PLAYERS - MUST BE FIRST
-local fakePlayerIds = {}
+local ReplicatedStorage = game:GetService('ReplicatedStorage')Ids = {}
 _G.fakePlayerIds = fakePlayerIds
 
 -- Hook SettingsHelper early with better fake player detection
